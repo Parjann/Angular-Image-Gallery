@@ -1,0 +1,26 @@
+<div class="container">
+  <img class="img" src="{{ photoData.download_url }}" (load)="onImageLoad()" />
+  <div (click)="onPhotoClicked()" *ngIf="imageLoaded" class="overlay">
+    <div class="iconGroupContainer">
+      <div class="iconsContainer">
+        <img class="icon" src="../../../../assets/icons/heart-icon.png" />
+      </div>
+      {{imageLoaded}}
+      &nbsp; &nbsp;
+      <div class="iconsContainer">
+        <img class="icon" src="../../../../assets/icons/plus-icon.png" />
+      </div>
+    </div>
+    <div class="authorContainer">
+      <span class="authorText">{{ photoData.author }}</span>
+      <a
+        href="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg"
+        Download="test_image"
+      >
+        <div class="iconsContainer">
+          <img class="icon" src="../../../../assets/icons/download-icon.png" />
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

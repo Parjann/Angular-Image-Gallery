@@ -1,0 +1,28 @@
+<div>
+  <app-header></app-header>
+  <app-banner></app-banner>
+  <!-- Highlight Directive -->
+  <div class="highlightContainer" highlightNumber>
+    This is Directive: He is 22 Years Old
+  </div>
+  <!-- Image Grid -->
+  <div
+    class="imagesWrapper"
+    infiniteScroll
+    [infiniteScrollDistance]="2"
+    [infiniteScrollThrottle]="500"
+    (scrolled)="onScroll()"
+    [scrollWindow]="true"
+  >
+    <app-photo-item
+      *ngFor="let photo of photos"
+      [ngStyle]="getPhotoWrapperStyle(photo.width, photo.height)"
+      [photoData]="photo"
+    ></app-photo-item>
+  </div>
+
+
+  
+
+  
+</div>

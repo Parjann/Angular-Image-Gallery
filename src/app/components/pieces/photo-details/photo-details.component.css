@@ -1,0 +1,49 @@
+.container {
+  @apply rounded 
+     overflow-hidden 
+     shadow-lg
+     bg-white
+     w-full
+     h-full
+     flex
+     flex-col
+     p-4;
+}
+
+.imgInfoContainer {
+  @apply flex 
+     items-center;
+}
+
+.imgContainer {
+  @apply flex-1 
+     flex
+     items-center 
+     justify-center
+     mt-2;
+}
+
+.img {
+  @apply w-auto 
+     h-auto
+     rounded;
+}
+
+.authorName {
+  @apply flex-1 font-bold;
+}
+
+.iconsContainer {
+  @apply h-9 
+     w-9
+     flex
+     items-center
+     justify-center
+     border
+     cursor-pointer
+     rounded-md;
+}
+
+.icon {
+  @apply h-4 w-auto;
+}

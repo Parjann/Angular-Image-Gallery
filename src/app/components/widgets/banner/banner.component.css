@@ -1,0 +1,88 @@
+.bannerContainer {
+  @apply w-screen
+     relative
+     lg:h-[38rem]
+     md:h-[35rem]
+     h-56;
+}
+
+.bannerImage {
+  @apply w-full 
+     h-full 
+     object-cover;
+}
+
+.overlay {
+  @apply absolute 
+     top-0
+     left-0
+     w-full
+     h-full
+     bg-black 
+     opacity-40;
+}
+
+.contentsContainer {
+  @apply absolute
+     flex 
+     flex-col
+     top-0
+     left-0
+     lg:px-56
+     md:px-32
+     px-4
+     justify-center
+     lg:space-y-4
+     md:space-y-3
+     space-y-2
+     w-full
+     h-full;
+}
+
+.mainTitle {
+  @apply text-2xl
+     md:text-5xl
+     lg:text-5xl
+     text-white 
+     font-bold;
+}
+
+.descriptionTxt {
+  @apply lg:text-lg
+     text-xs
+     text-white;
+}
+
+.searchInputContainer {
+  @apply bg-white
+     border
+     h-12
+     items-center
+     space-x-1
+     rounded-md
+     py-2
+     px-3
+     hidden
+     lg:flex
+     md:flex;
+}
+
+.searchContainerIcons {
+  @apply h-5 w-auto;
+}
+
+.searchInput {
+  @apply flex-1 
+     bg-transparent 
+     outline-none 
+     focus:ring-0 
+     text-sm;
+}
+
+.trendingText {
+  @apply text-white
+     text-base
+     lg:block
+     md:block
+     hidden;
+}

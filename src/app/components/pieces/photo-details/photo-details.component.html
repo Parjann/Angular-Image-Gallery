@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="imgInfoContainer">
+    <span class="authorName">{{ photo.author }}</span>
+    <div class="iconsContainer">
+      <img class="icon" src="../../../../assets/icons/heart-icon.png" />
+    </div>
+    &nbsp; &nbsp;
+    <div class="iconsContainer">
+      <img class="icon" src="../../../../assets/icons/plus-icon.png" />
+    </div>
+    &nbsp; &nbsp;
+    <div class="iconsContainer">
+      <img class="icon" src="../../../../assets/icons/download-icon.png" />
+    </div>
+  </div>
+  <a
+    href="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg"
+    Download="test_image"
+  >
+    <div class="imgContainer">
+      <img src="{{ photo.download_url }}" class="img" />
+    </div>
+  </a>
+</div>
