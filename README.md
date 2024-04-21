@@ -17,7 +17,7 @@ Follow these steps to get the project up and running on your local machine:
 
 1. Clone the repository to your local machine:
 ```
-git clone: 
+git clone: https://github.com/Parjann/Angular-Image-Gallery.git
 ```
 
 2. Navigate to the project directory:
